@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
+import Card from './components/cards';
+import Navbar from './components/Navbar';
+import Footer from './components/footer';
+import Comments from './components/comments';
 
 function App() {
   return (
     <div>
-      <header>
-        [[ SITE NAV GOES HERE ]]
-      </header>
+      <Navbar/>
+      <Card/>
+      <Comments/>
       <div class="container">
         <h1 class="section-title">Recent Photos (6)</h1>
         <ul class="cards">
@@ -370,9 +374,7 @@ function App() {
           </li>
         </ul>
       </div>
-      <footer>
-        [[ SITE FOOTER GOES HERE ]]
-      </footer>
+     <Footer/>
     </div>
   );
 }
